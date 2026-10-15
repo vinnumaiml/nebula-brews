@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavigation();
   initHeroDates();
   renderSuites('all');
-  renderBrews('beer');
+  const activeTab = document.querySelector('#brew-tabs .tab-btn.active');
+  renderBrews(activeTab ? activeTab.dataset.category : 'coffee');
   renderFaqs();
   initBookingModal();
   initContactForm();

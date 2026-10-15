@@ -237,6 +237,15 @@ const hotelData = {
 
       {
         category: "coffee",
+        name: "winter special coffee",
+        specs: "Seasonal Espresso | Stardust Foam",
+        price: "$5.99",
+        desc: "Espresso topped with stardust foam",
+        tags: ["Winter Special", "Seasonal", "Barista Choice"],
+        image: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        category: "coffee",
         name: "Stardust Single-Origin Pour-Over",
         specs: "Yirgacheffe, Ethiopia | Washed | Altitude 2,100m",
         price: "$8.50",
