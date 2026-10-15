@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nebula-Brews | Luxury Boutique Hotel & Artisanal Craft Lounge</title>
+  <meta name="description" content="Welcome to Nebula-Brews. Experience celestial luxury, high-powered rooftop stargazing, and handcrafted artisanal microbrews in an extraordinary sanctuary.">
+  <meta name="keywords" content="Nebula-Brews, luxury boutique hotel, craft beer hotel, stargazing observatory, rooftop lounge, artisan coffee roastery">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%2307080e' stroke='%23e2b874' stroke-width='4'/><circle cx='50' cy='50' r='20' fill='%23e2b874'/><path d='M50 15 L50 85 M15 50 L85 50' stroke='%23e2b874' stroke-width='3'/></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Dynamic Space Ambient Background -->
+  <div class="space-background">
+    <div class="stars-overlay"></div>
+  </div>
+
+  <!-- Top Announcement Bar -->
+  <header class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <div class="top-bar-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span>742 Stellar Horizon Blvd, Celestial Bay, CA</span>
+        </div>
+        <div class="top-bar-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <a href="mailto:reservations@nebulabrews.com">reservations@nebulabrews.com</a>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <div class="top-bar-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <a href="tel:+18005926328">+1 (800) 592-NEBULA</a>
+        </div>
+        <span class="top-badge">24/7 Celestial Concierge</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Nebula-Brews Home">
+        <div class="logo-symbol">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M12 3v18"></path>
+            <path d="M3 12h18"></path>
+            <circle cx="12" cy="12" r="3" fill="currentColor"></circle>
+          </svg>
+        </div>
+        <div class="brand-title">
+          <span class="brand-name">Nebula-Brews</span>
+          <span class="brand-sub">Hotel & Artisanal Lounge</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#story" class="nav-link">Our Story</a></li>
+        <li><a href="#suites" class="nav-link">Suites & Stays</a></li>
+        <li><a href="#brews" class="nav-link">Brews & Dining</a></li>
+        <li><a href="#observatory" class="nav-link">Observatory</a></li>
+        <li><a href="#amenities" class="nav-link">Amenities</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn btn-primary btn-sm" onclick="openBookingModal('penthouse-observatory')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Book Your Stay
+        </button>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+        <span>Where Celestial Luxury Meets Artisanal Craft</span>
+      </div>
+      
+      <h1 class="hero-title">
+        Awaken to the Horizon.<br>
+        <span>Toast to the Constellations.</span>
+      </h1>
+      
+      <p class="hero-subtitle">
+        Immerse yourself in a five-star sanctuary featuring panoramic sky dome suites, an on-site artisanal microbrewery & specialty roastery, and private rooftop stargazing observatories.
+      </p>
+
+      <div class="hero-cta-group">
+        <button class="btn btn-primary btn-lg" onclick="openBookingModal('penthouse-observatory')">
+          Reserve Your Suite
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+        <a href="#suites" class="btn btn-outline btn-lg">
+          Explore Accommodations
+        </a>
+      </div>
+
+      <!-- Quick Availability Booking Bar -->
+      <div class="booking-bar-wrapper">
+        <form class="booking-bar" id="hero-booking-form">
+          <div class="booking-field">
+            <label class="booking-label" for="hero-checkin">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              Check-In
+            </label>
+            <input type="date" id="hero-checkin" class="booking-input" required>
+          </div>
+
+          <div class="booking-field">
+            <label class="booking-label" for="hero-checkout">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              Check-Out
+            </label>
+            <input type="date" id="hero-checkout" class="booking-input" required>
+          </div>
+
+          <div class="booking-field">
+            <label class="booking-label" for="hero-suite">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+              Experience Type
+            </label>
+            <select id="hero-suite" class="booking-input">
+              <option value="all">All Suites & Lofts</option>
+              <option value="luxury">Luxury Sky Suites</option>
+              <option value="executive">Executive & Creator</option>
+              <option value="balcony">Garden & Balcony</option>
+            </select>
+          </div>
+
+          <div class="booking-field">
+            <label class="booking-label" for="hero-guests">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+              Guests
+            </label>
+            <select id="hero-guests" class="booking-input">
+              <option value="1">1 Adult</option>
+              <option value="2" selected>2 Adults</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4+ Guests</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary" id="hero-search-btn">
+            <span>Check Availability</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Key Metrics & Accolades Ribbon -->
+  <section class="stats-ribbon">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <span class="stat-number">4.96★</span>
+        <span class="stat-label">Guest Rating (1,480+ Reviews)</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">45</span>
+        <span class="stat-label">Handcrafted Luxury Suites</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">18</span>
+        <span class="stat-label">Award-Winning House Brews</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">360°</span>
+        <span class="stat-label">Rooftop Sky Observatory</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story Section -->
+  <section class="story-section" id="story">
+    <div class="container story-grid">
+      <div class="story-text">
+        <span class="section-tag">A New Paradigm in Hospitality</span>
+        <h3>The Confluence of Astronomical Wonder & Artisanal Mastery</h3>
+        <p>
+          Founded on the principle that true hospitality should inspire wonder, <strong>Nebula-Brews</strong> merges five-star boutique elegance with the sensory alchemy of craft brewing and deep space observation.
+        </p>
+        <p>
+          Nestled along California's pristine Celestial Bay, every architectural line is tuned to the cosmos. By day, indulge in freshly roasted single-origin coffees and bespoke spa hydrotherapy. By twilight, savor limited-batch double IPAs and barrel-aged stouts brewed on-site, followed by private astronomy sessions under crystal-clear night skies.
+        </p>
+
+        <div class="story-highlights">
+          <div class="highlight-box">
+            <h4>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="12 6 12 12 16 14"></polygon></svg>
+              In-House Microbrewery
+            </h4>
+            <p>Glass-encased fermenters producing small-batch, seasonal ales and nitro brews poured directly from in-suite taps.</p>
+          </div>
+          <div class="highlight-box">
+            <h4>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              Meade Telescopes
+            </h4>
+            <p>High-powered computerised optics on our rooftop deck with resident astrophysicists guiding nightly sky journeys.</p>
+          </div>
+        </div>
+
+        <a href="#suites" class="btn btn-outline">
+          Discover The Experience
+        </a>
+      </div>
+
+      <div class="story-visual">
+        <div class="story-image-main">
+          <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80" alt="Nebula-Brews Architecture" loading="lazy">
+        </div>
+        <div class="story-badge-floating">
+          <div class="star-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+          <div class="badge-text">
+            <span class="badge-top">Voted #1 Luxury Boutique</span>
+            <span class="badge-bot">World Travel Awards 2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Suites & Accommodations Showcase -->
+  <section class="suites-section" id="suites">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Sanctuary In The Stars</span>
+        <h2 class="section-title">Suites & Private Lofts</h2>
+        <p class="section-desc">
+          Each retreat is an architectural masterwork crafted with natural walnut, brushed brass, private sommelier taps, and panoramic constellation views.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-tabs" id="suite-tabs">
+        <button class="tab-btn active" data-filter="all">All Accommodations</button>
+        <button class="tab-btn" data-filter="luxury">Luxury Suites</button>
+        <button class="tab-btn" data-filter="executive">Executive & Creator</button>
+        <button class="tab-btn" data-filter="balcony">Garden & Balcony</button>
+      </div>
+
+      <!-- Dynamic Suites Grid -->
+      <div class="suites-grid" id="suites-container">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Brews, Roastery & Gastronomy Section -->
+  <section class="brews-section" id="brews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Culinary & Beverage Alchemy</span>
+        <h2 class="section-title">The Nebula Craft Experience</h2>
+        <p class="section-desc">
+          From unpasteurized fresh ales fermented on-site to 24-hour single-origin cold drips and Michelin-grade gastro bites.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-tabs" id="brew-tabs">
+        <button class="tab-btn active" data-category="beer">Artisanal Craft Beers</button>
+        <button class="tab-btn" data-category="coffee">Specialty Coffee Roastery</button>
+        <button class="tab-btn" data-category="cocktails">Cosmic Mixology</button>
+        <button class="tab-btn" data-category="dining">Gastro-Lounge & Dining</button>
+      </div>
+
+      <!-- Dynamic Brews Grid -->
+      <div class="brews-grid" id="brews-container">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <!-- Stargazing Observatory Feature Banner -->
+      <div class="observatory-banner" id="observatory">
+        <div class="observatory-info">
+          <span class="section-tag" style="color: var(--nebula-cyan);">Celestial Wonder</span>
+          <h3>Rooftop Stargazing Observatory</h3>
+          <p>
+            Ascend to our 12th-floor sky deck, home to three computerized Meade LX600 astronomical telescopes. Our resident astrophysicists guide guests nightly through Jupiter’s moons, Saturn’s rings, and deep-space emission nebulae, all while enjoying our signature Starlight Stout.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="openBookingModal('penthouse-observatory')">
+              Book Observatory Suite
+            </button>
+            <a href="#contact" class="btn btn-outline">
+              Inquire Private Telescope Tour
+            </a>
+          </div>
+        </div>
+
+        <div class="sky-forecast-card">
+          <div class="forecast-header">
+            <h4>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              Live Night Sky Conditions
+            </h4>
+            <div class="forecast-live-indicator">
+              <span class="live-dot"></span>
+              Live Feed
+            </div>
+          </div>
+          <div class="forecast-items">
+            <div class="forecast-stat">
+              <span class="forecast-stat-label">Atmospheric Clarity</span>
+              <span class="forecast-stat-value" id="sky-clarity">98% (Pristine)</span>
+            </div>
+            <div class="forecast-stat">
+              <span class="forecast-stat-label">Lunar Phase</span>
+              <span class="forecast-stat-value" id="sky-moon">Waxing Crescent</span>
+            </div>
+            <div class="forecast-stat">
+              <span class="forecast-stat-label">Astronomical Seeing</span>
+              <span class="forecast-stat-value" id="sky-seeing">0.74 Arcsec</span>
+            </div>
+            <div class="forecast-stat">
+              <span class="forecast-stat-label">Tonight's Target</span>
+              <span class="forecast-stat-value" id="sky-target">Orion Nebula (M42)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Celestial Amenities Section -->
+  <section class="amenities-section" id="amenities">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Unrivaled Comfort</span>
+        <h2 class="section-title">Celestial Amenities</h2>
+        <p class="section-desc">
+          Every amenity has been curated to create an effortless blend of sensory delight, relaxation, and bespoke service.
+        </p>
+      </div>
+
+      <div class="amenities-grid">
+        <div class="amenity-card">
+          <div class="amenity-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+          <h3 class="amenity-title">Rooftop Sky Observatory</h3>
+          <p class="amenity-desc">Equipped with computerized high-powered telescopes and guided nightly cosmic tours led by our resident astrophysicist.</p>
+        </div>
+
+        <div class="amenity-card">
+          <div class="amenity-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          </div>
+          <h3 class="amenity-title">Microbrewery & Roastery</h3>
+          <p class="amenity-desc">On-site glass brewhouse producing small-batch craft ales, alongside our single-origin ethically sourced coffee roastery.</p>
+        </div>
+
+        <div class="amenity-card">
+          <div class="amenity-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M2 6h20M2 18h20"></path></svg>
+          </div>
+          <h3 class="amenity-title">Heated Infinity Sky Pool</h3>
+          <p class="amenity-desc">Suspended 12 stories above the bay, heated year-round with underwater constellation fiber optics and private cabanas.</p>
+        </div>
+
+        <div class="amenity-card">
+          <div class="amenity-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </div>
+          <h3 class="amenity-title">Astral Wellness Spa</h3>
+          <p class="amenity-desc">Full rejuvenation sanctuary with volcanic stone hot tubs, Finnish cedar sauna, herbal aromatherapy, and sound bowl therapy.</p>
+        </div>
+
+        <div class="amenity-card">
+          <div class="amenity-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+          </div>
+          <h3 class="amenity-title">24/7 Celestial Concierge</h3>
+          <p class="amenity-desc">From Tesla airport shuttle transfers and private yacht charters to custom in-suite sommelier pairings at any hour.</p>
+        </div>
+
+        <div class="amenity-card">
+          <div class="amenity-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          </div>
+          <h3 class="amenity-title">High-Speed Executive Pods</h3>
+          <p class="amenity-desc">Ultra high-speed 1Gbps Wi-Fi 6E, acoustic isolation meeting sanctuaries, podcast studio, and 4K creative workstations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guest Testimonials Section -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Unfiltered Experiences</span>
+        <h2 class="section-title">Words From Our Voyagers</h2>
+        <p class="section-desc">
+          Read what astrophysicists, culinary critics, and travelers say about their stays at Nebula-Brews.
+        </p>
+      </div>
+
+      <div class="reviews-grid">
+        <article class="review-card">
+          <div class="stars-rating">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+          <h4 class="review-headline">"An astronomical masterclass in boutique hospitality."</h4>
+          <p class="review-comment">
+            "Sipping an on-site brewed Andromeda Double IPA while peering at the rings of Saturn through their rooftop observatory telescope was genuinely transcendent. The suite details and acoustics are flawless."
+          </p>
+          <div class="reviewer-meta">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Dr. Alistair Sterling" class="reviewer-avatar">
+            <div class="reviewer-details">
+              <h5>Dr. Alistair Sterling</h5>
+              <span>Astrophysicist & Regular Guest</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="stars-rating">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+          <h4 class="review-headline">"The design, lighting, and sound are sheer perfection."</h4>
+          <p class="review-comment">
+            "From the velvet texture of the headboards to the subtle celestial soundtrack, every detail was built with intention. And their single-origin cold drip coffee in the morning is Michelin quality."
+          </p>
+          <div class="reviewer-meta">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80" alt="Elena Rostova" class="reviewer-avatar">
+            <div class="reviewer-details">
+              <h5>Elena Rostova</h5>
+              <span>Architectural Digest Contributor</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="stars-rating">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+          <h4 class="review-headline">"The craft brews rival the best in the nation."</h4>
+          <p class="review-comment">
+            "I travel 200+ days a year and this has instantly become my favorite retreat. Having your own nitro tap in the Orion suite and an artisan bakery downstairs makes working feel like pure relaxation."
+          </p>
+          <div class="reviewer-meta">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Marcus Vance" class="reviewer-avatar">
+            <div class="reviewer-details">
+              <h5>Marcus Vance</h5>
+              <span>Tech Founder & Food Critic</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Location Section with Sample Details -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Reach Our Concierge</span>
+        <h2 class="section-title">Contact & Reservations</h2>
+        <p class="section-desc">
+          Whether planning an intimate getaway, private telescope buy-out, or microbrewery tasting dinner, our staff is at your service.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Sample Contact Information Panel -->
+        <div class="contact-info-panel">
+          <div class="contact-card">
+            <div class="contact-item">
+              <div class="contact-icon-bubble">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="contact-detail-wrap">
+                <h5>Sanctuary Address</h5>
+                <p><strong>Nebula-Brews Hotel & Lounge</strong></p>
+                <p>742 Stellar Horizon Boulevard, Celestial Bay, CA 90291, USA</p>
+                <p style="font-size: 0.8rem; color: var(--gold-light); margin-top: 0.2rem;">Coordinates: 34.0195° N, 118.4912° W</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon-bubble">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="contact-detail-wrap">
+                <h5>Official Email Inquiries</h5>
+                <p>Reservations: <a href="mailto:reservations@nebulabrews.com">reservations@nebulabrews.com</a></p>
+                <p>Concierge & VIP: <a href="mailto:concierge@nebulabrews.com">concierge@nebulabrews.com</a></p>
+                <p>Private Events & Press: <a href="mailto:events@nebulabrews.com">events@nebulabrews.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon-bubble">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div class="contact-detail-wrap">
+                <h5>Telephone & Direct Lines</h5>
+                <p>Toll-Free (US/CAN): <a href="tel:+18005926328">+1 (800) 592-NEBULA (632-852)</a></p>
+                <p>Direct Front Desk: <a href="tel:+15557827548">+1 (555) 782-7548</a></p>
+                <p>WhatsApp Concierge: <a href="tel:+15557827549">+1 (555) 782-7549</a></p>
+              </div>
+            </div>
+
+            <!-- Operating Hours -->
+            <div class="hours-badge-table">
+              <div class="hours-row">
+                <span>Front Desk & Concierge</span>
+                <span>24 Hours / 7 Days</span>
+              </div>
+              <div class="hours-row">
+                <span>Rooftop Brew Lounge</span>
+                <span>07:00 AM – 02:00 AM Daily</span>
+              </div>
+              <div class="hours-row">
+                <span>Observatory Sky Sessions</span>
+                <span>08:30 PM – 01:00 AM Nightly</span>
+              </div>
+              <div class="hours-row">
+                <span>Astral Spa & Hydrotherapy</span>
+                <span>08:00 AM – 10:00 PM Daily</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Direct Message Form -->
+        <div class="contact-form-panel">
+          <h3>Send Us a Message</h3>
+          <p>Have special dietary requests, anniversary arrangements, or group inquiries? Fill out the details below.</p>
+
+          <form id="hotel-contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contact-name">Your Full Name</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="e.g. Liam Anderson" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Email Address</label>
+                <input type="email" id="contact-email" class="form-control" placeholder="e.g. liam@domain.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contact-phone">Contact Phone</label>
+                <input type="tel" id="contact-phone" class="form-control" placeholder="+1 (555) 000-0000">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-subject">Inquiry Type</label>
+                <select id="contact-subject" class="form-control">
+                  <option value="Suite Reservation">Suite Reservation</option>
+                  <option value="Brewery Tour & Tasting">Brewery Tour & Tasting</option>
+                  <option value="Private Sky Deck Buyout">Private Sky Deck Buyout</option>
+                  <option value="Wedding / Celebration">Wedding / Celebration</option>
+                  <option value="General Concierge Question">General Concierge Question</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Message or Special Requests</label>
+              <textarea id="contact-message" class="form-control" placeholder="Tell us how we can curate your perfect stay at Nebula-Brews..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+              <span>Transmit Inquiry to Concierge</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive FAQ Section -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Frequently Asked Questions</span>
+        <h2 class="section-title">Everything You Need to Know</h2>
+        <p class="section-desc">Quick answers regarding check-in times, brewery tours, pet policies, and amenities.</p>
+      </div>
+
+      <div class="faq-accordion" id="faq-accordion">
+        <!-- Rendered via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="logo-symbol">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="9"></circle>
+                <path d="M12 3v18"></path>
+                <path d="M3 12h18"></path>
+                <circle cx="12" cy="12" r="3" fill="currentColor"></circle>
+              </svg>
+            </div>
+            <div class="brand-title">
+              <span class="brand-name">Nebula-Brews</span>
+              <span class="brand-sub">Hotel & Artisanal Lounge</span>
+            </div>
+          </div>
+          <p>
+            Celestial luxury accommodation meets artisanal craft brewing. Where every night is an odyssey under the stars.
+          </p>
+          <div class="footer-socials">
+            <a href="#instagram" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#facebook" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#twitter" class="social-link" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+            <a href="#youtube" class="social-link" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#story">Our Philosophy</a></li>
+            <li><a href="#suites">Suites & Villas</a></li>
+            <li><a href="#brews">Brews & Dining</a></li>
+            <li><a href="#observatory">Rooftop Observatory</a></li>
+            <li><a href="#amenities">Resort Amenities</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Experiences</h4>
+          <ul class="footer-links">
+            <li><a href="#brews">Sunset Brewery Tour</a></li>
+            <li><a href="#observatory">Stargazing With Astronomers</a></li>
+            <li><a href="#amenities">Astral Wellness Hydro-Spa</a></li>
+            <li><a href="#brews">Single-Origin Roastery Tasting</a></li>
+            <li><a href="#contact">Private Heliport Transfers</a></li>
+            <li><a href="#contact">Exclusive Weddings & Buyouts</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Nebula Inner Circle</h4>
+          <p style="font-size: 0.85rem; margin-bottom: 1rem;">
+            Join our private newsletter for secret seasonal brew releases, telescope event alerts, and 15% off your first stay.
+          </p>
+          <form id="newsletter-form" style="display: flex; gap: 0.5rem; flex-direction: column;">
+            <input type="email" id="newsletter-email" class="form-control" placeholder="Enter your email" required style="padding: 0.6rem 0.9rem; font-size: 0.85rem;">
+            <button type="submit" class="btn btn-primary btn-sm">Subscribe & Get Code</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Nebula-Brews Hotel & Artisanal Lounge. All rights reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Hospitality</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Booking & Suite Details Modal -->
+  <div class="modal-overlay" id="suite-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close dialog">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="modal-body" id="modal-body-content">
+        <!-- Content injected dynamically via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+  </button>
+
+  <!-- JavaScript Modules -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
